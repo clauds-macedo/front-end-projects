@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #212121
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    width: 60px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.content{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #313131;
+    background: linear-gradient(45deg, rgba(33,33,33,1) 58%, rgba(116,144,26,1) 80%);
+}
+
+.textbox{
+    color: #acd037;
+    max-width: 600px;
+    font-weight: bold;
+}
+
+.textbox h2{
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-shadow: 1px 1.2px #63C64B;
+}
+
+.textbox span{
+    font-size: 2em;
+    color: #acd037;
+}
+
+.monster{
+    height: 300px;
+    width: 150px;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    transform: translateY(-132%);
+    list-style: none;
+}
+
+.thumb li{
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    
+    transition: 0.8s;
+}
+
+.thumb li:hover{
+    transform: translateY(-10%);
+}
+
+.thumb img{
+    max-width: 30px;
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="1981937_e34a7.png" type="image/x-icon">
+</head>
+<body>
+    <section class="sect">
+        <header>
+            <a href=""><img src="https://img1.picmix.com/output/stamp/normal/7/3/9/1/1981937_e34a7.png" alt=""  class="logo"></a>
+            <ul>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Esportes</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2 class="text">Monster Energy <br><span class="textosp">Unleash the beast!</span></h2>
+                <p class="textp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae esse molestias sapiente, harum, molestiae fugit cum ab quos impedit nemo libero. Corrupti temporibus, veritatis sunt hic possimus beatae nobis aperiam?</p>
+            </div>
+        <div class="img">
+            <img src="b2bbeee304e162823e0854291bace5df.webp" alt="" class="monster">
+        </div>
+        <ul class="thumb">
+            <li><img src="b2bbeee304e162823e0854291bace5df.webp" alt="" style="height: 73px; width: 60px;" onclick="muda_img('b2bbeee304e162823e0854291bace5df.webp'); muda_bg_verde();"></li>
+            <li> <img src="0007084701620.png" onclick="muda_img('0007084701620.png'); muda_bg_azul()"></li>
+            <li> <img src="energetico_monster_energy_ultra_violet_lata_473ml_3f1bb26f-7165-4761-9cb8-b0dc7334625e.png" alt="" onclick="muda_img('energetico_monster_energy_ultra_violet_lata_473ml_3f1bb26f-7165-4761-9cb8-b0dc7334625e.png'); muda_bg_roxo()"></li>
+        </ul>
+        </div>
+    </section>
+</body>
+
+<script>
+    function muda_img(img){
+        document.querySelector('.monster').src = img;
+    }
+
+    function muda_bg_azul(){
+        const bg = document.querySelector('.content');
+        bg.style.background = "linear-gradient(45deg," + '#c0d2df 58%' + "," + '#2991d3 80%' + ")";
+        const texto = document.querySelector('.text');
+        texto.style.color = "#3193D2";
+        const textop = document.querySelector('.textp');
+        textop.style.color = '#3193D2';
+        const textosp = document.querySelector('.textosp');
+        textosp.style.color = "#3193D2";
+        const bg_geral = document.querySelector('.sect');
+        bg_geral.style.background = '#3193D2';
+        const logo = document.querySelector('.logo');
+        logo.src = 'logobranca.png'
+    }
+
+    function muda_bg_roxo(){
+        const bg = document.querySelector('.content');
+        bg.style.background = "linear-gradient(45deg," + '#c0d2df 58%' + "," + '#7c51dd 80%' + ")";
+        const texto = document.querySelector('.text');
+        texto.style.color = "#7c51dd"
+        const textop = document.querySelector('.textp');
+        textop.style.color = '#7c51dd';
+        const textosp = document.querySelector('.textosp');
+        textosp.style.color = "#7c51dd";
+        const bg_geral = document.querySelector('.sect');
+        bg_geral.style.background = '#7c51dd';
+        const logo = document.querySelector('.logo')
+        logo.src = 'logobranca.png'
+        
+    }
+    
+    function muda_bg_verde(){
+        const bg = document.querySelector('.content');
+        bg.style.background = "linear-gradient(45deg," + 'rgba(33,33,33,1) 58%' + "," + 'rgba(116,144,26,1) 80%' + ")";
+        const texto = document.querySelector('.text');
+        texto.style.color = "#acd037"  
+        const textop = document.querySelector('.textp');
+        textop.style.color = '#acd037';
+        const textosp = document.querySelector('.textosp');
+        textosp.style.color = "#acd037";
+        const bg_geral = document.querySelector('.sect');
+        bg_geral.style.background = '#212121';
+        const logo = document.querySelector('.logo')
+        logo.src = 'https://img1.picmix.com/output/stamp/normal/7/3/9/1/1981937_e34a7.png'    
+}
+
+</script>
+</html>
