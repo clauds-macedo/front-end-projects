@@ -89,7 +89,7 @@ header ul li a{
     position: absolute;
     left: 50%;
     bottom: 2px;
-    transform: translateY(-132%);
+    top: 67%;
     list-style: none;
 }
 
@@ -98,7 +98,6 @@ header ul li a{
     align-items: center;
     align-content: center;
     cursor: pointer;
-    
     transition: 0.8s;
 }
 
@@ -108,5 +107,20 @@ header ul li a{
 
 .thumb img{
     max-width: 30px;
+}
+
+@media (max-width: 969px){
+
+    .thumb{
+        left: 3%;
+        display: flex;
+        flex-direction: column;
+        top: 35%;
+    }
+
+    .thumb li{
+        margin-bottom: 10px;
+    }
+
 }
 
