@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen Mono', monospace;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+    
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #90090D;
+    clip-path: polygon(49% 0, 100% 0, 100% 100%, 89% 100%);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lista{
+    list-style-type: none;
+    width: 100%;
+    padding: 30px;
+}
+
+.lista li{
+    display: inline-block;
+    margin-left: 15px;
+    
+}
+
+.lista li:nth-child(1){
+    border-left: 7px solid #90090D;
+
+}
+
+.lista a{
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+.lista a:hover{
+    background: #f0f1eb;
+    color: #212121;
+    transition: 1s;
+}
+
+.lista li:after{
+    border-left: 2px solid #90090D;
+}
+
+
+.content{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    max-width: 600px;
+}
+
+.content h2{
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-shadow: 2px 1.5px #90090D;
+
+}
+
+.content span{
+        font-size: 2em;
+        color: #f0f1eb;
+
+}
+
+.content a{
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+    color: #fff;
+    background: #90090D;
+    padding: 10px 25px;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.content a:hover{
+    color: #90090D;
+    background: #fff;
+}
+
+.imgbox{
+    width: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.imgbox img{
+    position: relative;
+    max-width: 500px;
+    right: 27%;
+}
+
+.redes li{
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes img{
+    width: 50px;    
+}
+
+@media (max-width: 990px) {
+    .iconmenu{
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png) no-repeat;
+        filter: blur(1);
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .iconmenu.active{
+        position: fixed;
+        background: url(img/cancel.png) no-repeat;
+        filter: blur(1);
+        cursor: pointer;
+        top: 47px;
+        right: 35px;
+        width: 40px;
+        height: 50px;
+        z-index: 1000;
+    }    
+
+    .lista{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #313131;
+        display: flex;
+        flex-direction: column;
+        z-index: 11;
+        border: none;
+        padding: 50px;
+    }
+    .lista.active{
+        left: 0;
+    }
+
+    .lista li:nth-child(1){
+        border-left: none;
+    }
+
+    .lista li{
+        margin: 5px 0;
+    }
+
+    section{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    section::before{
+        clip-path: polygon(0 0, 100% 0, 100% 10%, 0 62%)
+    }
+
+    .redes{
+        display: flex;
+        position: relative;
+        top: -75px;
+        left: -59%;
+    }
+
+    section .content{
+        padding: 50px;
+        margin-bottom: 30px;
+    }
+    section .content h2{
+        font-size: 1.2em;
+    }
+    section .content span{
+        font-size: 2em;
+    }
+    section .content p{
+        font-size: 0.9em;
+    }
+
+    .imgbox{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgbox img{
+        max-width: 300px;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BH27</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="sect">
+        <header>
+            <ul class="lista" id="list">
+                <li><a href="">Início</a></li>
+                <li><a href="">Gols</a></li>
+                <li><a href="">Rank</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h2>Bruno Henrique<br><span>BH27</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sequi fugiat? Atque beatae unde illum dolores quos exercitationem incidunt quam ex eveniet sunt, ab ea corporis sapiente deleniti molestias eligendi?</p>
+            <a href="https://pt.wikipedia.org/wiki/Bruno_Henrique_Pinto" target="_blank">Saber Mais</a>
+        </div>
+        <div class="imgbox">
+            <img src="/img/bruno-henrique-1.png" alt="">
+        </div>
+        <ul class="redes">
+            <li><a href="https://www.instagram.com/b.henrique27/" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2518/PNG/512/brand_instagram_icon_151534.png" alt=""></a></li>
+            <li><a href="https://twitter.com/brunohenrique" target="_blank"><img src="https://cdn.icon-icons.com/icons2/726/PNG/512/TWITTER_icon-icons.com_62686.png" alt=""></a></li>
+        </ul>
+
+    </section>
+    <span class="iconmenu" id="alternar" onclick="alternate()">
+        <script>
+            function alternate(){
+                const nav = document.getElementById('list');
+                nav.classList.toggle('active')
+                const fecha = document.getElementById('alternar');
+                fecha.classList.toggle('active')
+            }
+        </script>
+
+    </span>
+</body>
+</html>
