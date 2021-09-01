@@ -141,6 +141,8 @@ header ul li a{
 
     section .content{
         display: block;
+        width: 110%;
+        padding: 8px;
         padding: 50px;
         margin-bottom: 30px;
     }
@@ -180,5 +182,3 @@ header ul li a{
     }
 
 }
-
-
