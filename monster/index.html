@@ -12,7 +12,7 @@
     <section class="sect">
         <header>
             <a href=""><img src="https://img1.picmix.com/output/stamp/normal/7/3/9/1/1981937_e34a7.png" alt=""  class="logo"></a>
-            <ul>
+            <ul class="list">
                 <li><a href="#">Novidades</a></li>
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Esportes</a></li>
@@ -23,8 +23,10 @@
                 <h2 class="text">Monster Energy <br><span class="textosp">Unleash the beast!</span></h2>
                 <p class="textp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae esse molestias sapiente, harum, molestiae fugit cum ab quos impedit nemo libero. Corrupti temporibus, veritatis sunt hic possimus beatae nobis aperiam?</p>
             </div>
-        <div class="img">
-            <img src="b2bbeee304e162823e0854291bace5df.webp" alt="" class="monster">
+        <div class="imgbox">
+            <div class="img">
+                <img src="b2bbeee304e162823e0854291bace5df.webp" alt="" class="monster">
+            </div>
         </div>
         <ul class="thumb">
             <li><img src="b2bbeee304e162823e0854291bace5df.webp" alt="" style="height: 73px; width: 60px;" onclick="muda_img('b2bbeee304e162823e0854291bace5df.webp'); muda_bg_verde();"></li>
@@ -51,9 +53,18 @@
         textosp.style.color = "#3193D2";
         const bg_geral = document.querySelector('.sect');
         bg_geral.style.background = '#3193D2';
+        bg_geral.style.transition = "ease 2s"
+        bg.style.transition = "ease 2s"
+        bg_geral.style.transition = "ease 2s"
         const logo = document.querySelector('.logo');
         logo.src = 'logobranca.png'
+        const content = document.querySelector('.content');
+        content.style.transition = "ease 2s"
+        if (window.matchMedia("(max-width: 969px)").matches) {
+            bg.style.background = "linear-gradient(888deg," + '#c0d2df 37%' + "," + '#2991d3 100%' + ")";
+        }
     }
+    //background: linear-gradient(888deg, rgba(33,33,33,1) 37%, rgba(116,144,26,1) 100%);
 
     function muda_bg_roxo(){
         const bg = document.querySelector('.content');
@@ -66,8 +77,13 @@
         textosp.style.color = "#7c51dd";
         const bg_geral = document.querySelector('.sect');
         bg_geral.style.background = '#7c51dd';
+        bg_geral.style.transition = "ease 2s"
         const logo = document.querySelector('.logo')
         logo.src = 'logobranca.png'
+        logo.style.transition = "ease 2s"
+        if (window.matchMedia("(max-width: 969px)").matches) {
+            bg.style.background = "linear-gradient(888deg," + '#c0d2df 37%' + "," + '#7c51dd 100%' + ")";
+        }
         
     }
     
@@ -83,7 +99,10 @@
         const bg_geral = document.querySelector('.sect');
         bg_geral.style.background = '#212121';
         const logo = document.querySelector('.logo')
-        logo.src = 'https://img1.picmix.com/output/stamp/normal/7/3/9/1/1981937_e34a7.png'    
+        logo.src = 'https://img1.picmix.com/output/stamp/normal/7/3/9/1/1981937_e34a7.png'  
+        if (window.matchMedia("(max-width: 969px)").matches) {
+            bg.style.background = "linear-gradient(888deg," + 'rgba(33,33,33,1) 37%' + "," + 'rgba(116,144,26,1) 100%' + ")";
+        }  
 }
 
 </script>
