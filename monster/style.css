@@ -166,4 +166,19 @@ header ul li a{
         margin-top: 30px;
         max-width: 300px;
     }
+    
 }
+
+@media (max-width: 525px){
+
+    header{
+        left: -20%;
+    }
+
+    .list{
+        left: 19%;
+    }
+
+}
+
+
