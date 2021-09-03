@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="//db.onlinewebfonts.com/c/73fedd912ba11f583a359ce4c2e742ed?family=Ninja+Naruto" rel="stylesheet" type="text/css"/>
+    <title>RESPONSIVE NARUTO WEBSITE</title>
+</head>
+<body>
+    <section class="main">
+        <header class="head">
+            <img src="giphy.gif" alt="" class="logo">
+            <ul>
+                <a href="">
+                    <li>Home</li>
+                </a>
+                <a href="https://naruto.fandom.com/pt-br/wiki/Wiki_Naruto" target="_blank" class="lista2">
+                    <li>Wikia</li>
+                </a>
+                <a href="#characters" class="lista3">
+                    <li>Characters</li>
+                </a>
+            </ul>
+        </header>
+        <div class="textbox">
+            <h1 class="text1">Naruto</h1>
+            <h3 class="text2">The 7th hokage</h3>
+            <p class="text3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, voluptas! Modi labore saepe non temporibus fuga officiis ex autem quisquam, hic obcaecati ullam fugiat expedita beatae magnam officia ad totam.</p>
+        </div>
+        <div class="imgboxp" id="imgprincipal">
+            <img src="05d814dc0c147f2044aa4b5575c39346.png" alt="" class="naruto">
+        </div>
+        <div class="arrows">
+            <img src="img/nrtchibi.png" alt="" onclick="changetext('Naruto', 'The 7th hokage', '#0b0b0b', '#0b0b0b', '#0b0b0b'); 
+            changeimg('05d814dc0c147f2044aa4b5575c39346.png', 'giphy.gif'); 
+            changebg('linear-gradient(90deg,' + '#fbe407 23%' + ',' + '#f2a30b 90%' + ')')">
+
+            <img src="img/sskchibi.png" alt="" onclick="changetext('Sasuke', 'The Leaf Village strongest ninja', '#B6BDD1', '#B6BDD1', '#fff'); 
+            changeimg('img/ssk.png', 'img/ssklogo.gif'); 
+            changebg('linear-gradient(45deg,' + 'rgba(74,74,87,1) 7%' + ',' + 'rgba(196,204,225,1) 80%' + ')')">
+
+            <img src="img/skrchibi.png" alt="" onclick="
+            changetext('Sakura', 'The medical ninja','#ffe7de','#ffe7de','#ffe7de');
+            changeimg('img/skr.png', 'img/skrlogo.gif');
+            changebg('linear-gradient(90deg,' + '#c3829e 23%' + ',' + '#e9b1cd 90%' + ')')">
+
+            <img src="img/kkschibi.png" alt=""onclick="
+            changetext('Kakashi', 'The Copy Ninja', '#C4C7CC', '#C4C7CC', '#C4C7CC', '#fff'); 
+            changeimg('img/kks.png', 'img/kkslogo.gif');
+            changebg('linear-gradient(90deg,' + '#4B453E 23%' + ',' + '#1E1425 90%' + ')')">
+        </div>
+    </section>
+        <main class="cards" id="characters">
+            <div class="container">
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="05d814dc0c147f2044aa4b5575c39346.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Naruto</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptas? Eos voluptates, odit dolor aut adipisci voluptatem, voluptas maiores sint fugit voluptatibus velit quis modi quas fuga. At, blanditiis eius?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/017e147c6cbfa4c9de4fe3d353585a9d.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Sasuke</h2>
+                        <p>aLorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptas? Eos voluptates, odit dolor aut adipisci voluptatem, voluptas maiores sint fugit voluptatibus velit quis modi quas fuga. At, blanditiis eius?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/be2721c71dce4c8a53f4d578b5e98ac5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Sakura</h2>
+                        <p>aLorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptas? Eos voluptates, odit dolor aut adipisci voluptatem, voluptas maiores sint fugit voluptatibus velit quis modi quas fuga. At, blanditiis eius?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/Kakashi_hokage.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Kakashi</h2>
+                        <p>aLorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptas? Eos voluptates, odit dolor aut adipisci voluptatem, voluptas maiores sint fugit voluptatibus velit quis modi quas fuga. At, blanditiis eius?</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/lee.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Rock Lee</h2>
+                        <p>aLorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, voluptas? Eos voluptates, odit dolor aut adipisci voluptatem, voluptas maiores sint fugit voluptatibus velit quis modi quas fuga. At, blanditiis eius?</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+</body>
+
+<script>
+    function changeimg(img, gif){
+        document.querySelector('.naruto').src = img;
+        document.querySelector('.logo').src = gif;
+    }
+
+    function changebg(bg){
+        const nbg = document.querySelector('.main');
+        nbg.style.background = bg
+    }
+
+    function header_text(cor){
+        document.querySelector('.head').style.color = cor
+    }
+
+    function changetext(text1, text2, cor1, cor2, cor3, cor4){
+        document.querySelector('.text1').innerHTML = text1
+        document.querySelector('.text2').innerHTML = text2
+        document.querySelector('.text1').style.color = cor1
+        document.querySelector('.text2').style.color = cor2
+        document.querySelector('.text3').style.color = cor3
+    }
+
+</script>
+
+</html>
