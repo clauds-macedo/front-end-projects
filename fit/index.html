@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Fit<span>ness</span></a>
+    </header>
+    <div class="banner">        
+        <video src="img/video.mp4" muted loop autoplay class="vid"></video>
+        <div class="container">
+            <div class="textbox">
+                <h2>Venha treinar conosco.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ducimus placeat, eligendi possimus, voluptatum, repellat accusantium nemo in sequi debitis beatae fugit sit! Sunt, nemo eos at voluptates fugiat vel?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tenetur, mollitia laudantium molestias eos voluptatibus maiores earum aspernatur dicta accusantium unde corporis, quam aliquid qui officia iste nulla necessitatibus? Ipsam.</p>
+                <a href="" class="btn">Saiba mais</a>
+                </div>
+            </div>
+        <div class="imgbox">
+            <img src="img/being-builder.png" alt="" class="builder">
+        </div>
+    </div>
+    <section class="atvd" id="offer">
+        <div class="offer">
+            <h2>O que oferecemos?</h2>
+        </div>
+        <main class="cards">
+            <div class="container">
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/musculacao.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Musculacao</h2>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/swimming_sport_5050.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Natação</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/zumba.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Zumba</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/ioga.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Ioga</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgbox">
+                        <img src="img/artes.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Artes Marciais</h2>
+                    </div>
+                </div>
+            </main>
+    </section>
+    <div class="swiper mySwiper">
+        <section class="ttl">
+            <div class="offer">
+                <h2>Nossa equipe</h2>
+            </div>
+        </section>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div>
+              <h2>Name</h2><img src="img/pexels-anna-tarazevich-5896063.jpg" alt="">
+          </div></div>
+          <div class="swiper-slide"><div><h2>Name</h2><img src="img/pexels-cottonbro-7690206.jpg" alt=""></div></div>
+          <div class="swiper-slide"><div>
+              <h2>Name</h2><img src="img/pexels-gleb-krasnoborov-2628207.jpg" alt="">
+          </div></div>
+          <div class="swiper-slide"><div>
+              <h2>Name</h2><img src="img/pexels-tima-miroshnichenko-5327506.jpg" alt="">
+          </div></div>
+          <div class="swiper-slide"><div>
+              <h2>Name</h2><img src="img/pexels-yan-krukov-4457993.jpg" alt="">
+          </div></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+      <div class="form">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Contact Us</h2>
+				<input type="text" class="field" placeholder="Nome">
+				<input type="text" class="field" placeholder="E-mail">
+				<input type="text" class="field" placeholder="Telefone">
+				<textarea placeholder="Digite sua mensagem" class="field"></textarea>
+				<button class="button">Send</button>
+			</div>
+		</div>
+	</div>
+
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 2,
+          centeredSlides: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          loop: true,
+          autoplay: {
+            delay: 2000,
+          },
+        });
+      </script>
+  
+</body>
+</html>
